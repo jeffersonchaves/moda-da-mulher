@@ -12,6 +12,7 @@
   <link href="assets/styles/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/styles/app.css">
+  <link rel="stylesheet" href="assets/styles/produtos.css">
 
 </head>
 
@@ -24,30 +25,32 @@
 
       <div class="row">
 
-        <div class="col-2 my-4">
+        <div class="col-lg-2 my-4 text-center text-lg-start">
           <img src="assets/images/logo.svg" alt="">
         </div>
 
-        <div class="col-7 my-4 d-flex align-items-center">
-          <form action="" class="w-100">
+        <div class="col-lg-7 my-4 d-flex align-items-center">
+          <form action="" class="site-search w-100">
 
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="escolha seu estilo aqui...">
-              <button class="btn btn-outline-secondary">buscar</button>
+              <input type="text" class="form-control rounded-pill py-2 px-4 pe-5" placeholder="escolha seu estilo aqui...">
+              <button class="btn position-absolute"> <i class="bi bi-search"></i> </button>
             </div>
 
           </form>
         </div>
 
-        <div class="col-3 d-flex align-items-center justify-content-end">
+        <div class="col-lg-3 d-flex align-items-center justify-content-end">
 
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-person-fill"></i> entrar</a>
+              <a class="nav-link text-secondary" href="#"><i class="bi bi-person-fill"></i> entrar</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-cart-fill"></i> carrinho</a>
+              <a class="nav-link text-secondary" href="#"><i class="bi bi-cart-fill position-relative">
+                 <span class="badge position-absolute top-0 start-100 translate-middle bg-danger rounded-circle">3 </span>
+              </i> carrinho</a>
             </li>
           </ul>
 
@@ -60,7 +63,7 @@
   </header>
   <!-- /cabeçalho principal -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-cor-secundaria">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-cor-secundaria sticky-top">
 
     <div class="container">
 
@@ -119,7 +122,6 @@
           <span class="visually-hidden">Próximo</span>
         </button>
 
-
       </div>
 
     </div>
@@ -161,19 +163,19 @@
       <div class="row">
 
         <!-- Produto -->
-        <div class="col-3">
-          <div class="card rounded-0 border-0">
+        <div class="col-md-3">
+          <div class="card card-produto rounded-0 border-0">
             <img src="assets/images/produtos/thumb/cropped-rosa.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body">
-              
+
               <h5 class="card-title">Cropped rosa</h5>
-              
+
               <p class="card-text">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
               </p>
-              
+
               <p class="card-text">R$ 59,90</p>
 
             </div>
@@ -182,13 +184,14 @@
         <!-- /Produto -->
 
         <!-- Produto -->
-        <div class="col-3">
+        <div class="col-md-3">
           <div class="card rounded-0 border-0">
-            <img src="assets/images/produtos/thumb/camiseta-manga-comprida.jpg" class="card-img-top rounded-0" alt="...">
+            <img src="assets/images/produtos/thumb/camiseta-manga-comprida.jpg" class="card-img-top rounded-0"
+              alt="...">
             <div class="card-body">
-              
+
               <h5 class="card-title">Camiseta manga comprida</h5>
-              
+
               <p class="card-text">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -196,7 +199,7 @@
                 <i class="bi bi-star-fill"></i>
 
               </p>
-              
+
               <p class="card-text">R$ 59,90</p>
 
             </div>
@@ -205,19 +208,19 @@
         <!-- /Produto -->
 
         <!-- Produto -->
-        <div class="col-3">
+        <div class="col-md-3">
           <div class="card rounded-0 border-0">
             <img src="assets/images/produtos/thumb/cropped-rosa.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body">
-              
+
               <h5 class="card-title">Cropped rosa</h5>
-              
+
               <p class="card-text">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
               </p>
-              
+
               <p class="card-text">R$ 59,90</p>
 
             </div>
@@ -226,19 +229,19 @@
         <!-- /Produto -->
 
         <!-- Produto -->
-        <div class="col-3">
+        <div class="col-md-3">
           <div class="card rounded-0 border-0">
             <img src="assets/images/produtos/thumb/cropped-rosa.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body">
-              
+
               <h5 class="card-title">Cropped rosa</h5>
-              
+
               <p class="card-text">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
               </p>
-              
+
               <p class="card-text">R$ 59,90</p>
 
             </div>
@@ -251,8 +254,73 @@
     </div>
 
   </main>
+  <!-- /.produtos -->
+
+  <section class="container veja-mais">
+
+    <div class="d-flex justify-content-center my-5">
+      <div class="btn btn-lg btn-warning text-uppercase rounded-pill px-4">veja mais</div>
+    </div>
+
+  </section>
+  <!-- /.veja-mais -->
 
 
+  <footer class="bg-cor-secundaria text-white">
+
+    <div class="container py-5">
+
+      <div class="row">
+
+        <div class="col-md-3">
+
+          <h5 class="text-primary">Atendimento</h5>
+
+          <ul>
+            <li>(11) 999999999</li>
+            <li>email@gmail.com</li>
+            <li>segunda a sexta das 09h00 as 17h00</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+
+          <h5 class="text-primary">Atendimento</h5>
+
+          <ul>
+            <li>(11) 999999999</li>
+            <li>email@gmail.com</li>
+            <li>segunda a sexta das 09h00 as 17h00</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+
+          <h5 class="text-primary">Atendimento</h5>
+
+          <ul>
+            <li>(11) 999999999</li>
+            <li>email@gmail.com</li>
+            <li>segunda a sexta das 09h00 as 17h00</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-5 mb-md-0">
+
+          <h5 class="text-primary">Atendimento</h5>
+
+          <ul>
+            <li>(11) 999999999</li>
+            <li>email@gmail.com</li>
+            <li>segunda a sexta das 09h00 as 17h00</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
 
   <script src="assets/scripts/bootstrap.bundle.min.js"></script>
 </body>
